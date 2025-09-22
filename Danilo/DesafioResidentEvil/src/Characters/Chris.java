@@ -1,10 +1,13 @@
 package Characters;
 
+import javax.xml.namespace.QName;
+
 public class Chris extends Character{
     private String arm;
     private int damage;
 
-    public Chris(String arm, int damage) {
+    public Chris(String name,String arm, int damage,  int life) {
+        super(name, life);
         this.arm = arm;
         this.damage = damage;
     }

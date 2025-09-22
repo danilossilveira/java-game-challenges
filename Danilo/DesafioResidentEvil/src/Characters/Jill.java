@@ -4,7 +4,8 @@ public class Jill extends Character{
     private String arm;
     private int damage;
 
-    public Jill(String arm, int damage) {
+    public Jill(String name,String arm, int damage,  int life) {
+        super(name, life);
         this.arm = arm;
         this.damage = damage;
     }

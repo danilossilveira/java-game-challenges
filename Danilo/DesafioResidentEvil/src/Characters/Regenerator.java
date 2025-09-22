@@ -1,10 +1,10 @@
 package Characters;
 
-public class Zombie extends Character{
+public class Regenerator extends Character{
     private String tipe;
     private int attackDamage;
 
-    public Zombie(String name, int life, String tipe, int attackDamage) {
+    public Regenerator(String name, int life, String tipe, int attackDamage) {
         super(name, life);
         this.tipe = tipe;
         this.attackDamage = attackDamage;

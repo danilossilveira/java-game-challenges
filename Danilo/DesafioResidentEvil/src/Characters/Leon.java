@@ -4,8 +4,8 @@ public class Leon extends Character{
     private String arm;
     private int damage;
 
-    public Leon(String arm, int damage) {
-        super();
+    public Leon(String name,String arm, int damage,  int life) {
+        super(name, life);
         this.arm = arm;
         this.damage = damage;
     }

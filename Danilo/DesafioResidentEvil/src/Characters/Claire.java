@@ -4,10 +4,10 @@ public class Claire extends Character{
     private String arm;
     private int damage;
 
-    public Claire(String arm, int damage) {
+    public Claire(String name,String arm, int damage,  int life) {
+        super(name, life);
         this.arm = arm;
         this.damage = damage;
-
     }
 
     public String getArm() {

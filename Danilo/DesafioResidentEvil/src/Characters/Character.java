@@ -27,8 +27,8 @@ public class Character {
     public void receiveDamage(int dano){
 
     }
-    public void alive(){
 
-    }
 
 }
+
+
