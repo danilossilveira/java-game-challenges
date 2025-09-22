@@ -11,28 +11,28 @@ Este projeto simula uma batalha entre sobreviventes e zumbis inspirada na franqu
 - `nome` (String)
 - `vida` (int)
 - Métodos:
-    - `receberDano(int dano)`
-    - `estaVivo()` → retorna `true` se vida > 0
+  - `receberDano(int dano)`
+  - `estaVivo()` → retorna `true` se vida > 0
 
 ### 🔹 Classe `Sobrevivente` (subclasse de `Personagem`)
 - `arma` (String)
 - `danoArma` (int)
 - Método:
-    - `atacar(Zumbi zumbi)` → reduz a vida do zumbi
+  - `atacar(Zumbi zumbi)` → reduz a vida do zumbi
 
 ### 🔹 Classe `Zumbi` (subclasse de `Personagem`)
 - `tipo` (String) → Ex: "Walker", "Crawler", "Nemesis"
 - `danoAtaque` (int)
 - Método:
-    - `atacar(Sobrevivente s)` → reduz a vida do sobrevivente
+  - `atacar(Sobrevivente s)` → reduz a vida do sobrevivente
 
 ### 🔹 Classe `Simulacao`
 - `ArrayList<Sobrevivente> sobreviventes`
 - `ArrayList<Zumbi> zumbis`
 - Métodos:
-    - `adicionarSobrevivente(Sobrevivente s)`
-    - `adicionarZumbi(Zumbi z)`
-    - `simularBatalha()` → cada sobrevivente ataca um zumbi aleatório e vice-versa
+  - `adicionarSobrevivente(Sobrevivente s)`
+  - `adicionarZumbi(Zumbi z)`
+  - `simularBatalha()` → cada sobrevivente ataca um zumbi aleatório e vice-versa
 
 ---
 
