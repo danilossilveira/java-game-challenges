@@ -3,13 +3,24 @@ package Characters;
 public class Character {
     private String name;
     private int life;
+    private int damage;
 
-    public Character(String name, int life) {
-        this.name = name;
-        this.life = life;
+
+    public int getDamage() {
+        return damage;
     }
 
-    public String getName() {
+    public void setDamage(int damage) {
+        this.damage = damage;
+    }
+
+    public Character(String name, int life, int damage) {
+        this.name = name;
+        this.life = life;
+        this.damage = damage;
+    }
+
+        public String getName() {
         return name;
     }
 
@@ -24,9 +35,12 @@ public class Character {
     public void setLife(int life) {
         this.life = life;
     }
-    public void receiveDamage(int dano){
+public void attack(){
 
-    }
+}
+public void ficha(){
+
+}
 
 
 }

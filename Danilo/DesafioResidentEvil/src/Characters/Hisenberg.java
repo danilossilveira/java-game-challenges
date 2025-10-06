@@ -2,12 +2,12 @@ package Characters;
 
 public class Hisenberg extends Character{
     private String tipe;
-    private int attackDamage;
+    private int Damage;
 
-    public Hisenberg(String name, int life, String tipe, int attackDamage) {
-        super(name, life);
-        this.tipe = tipe;
-        this.attackDamage = attackDamage;
+    public Hisenberg() {
+        super("Hisenberg", 400);
+        setTipe("Mecanico");
+        setDamage(20);
     }
 
     public String getTipe() {
@@ -18,11 +18,16 @@ public class Hisenberg extends Character{
         this.tipe = tipe;
     }
 
-    public int getAttackDamage() {
-        return attackDamage;
+    public int getDamage() {
+        return Damage;
     }
 
-    public void setAttackDamage(int attackDamage) {
-        this.attackDamage = attackDamage;
+    public void setDamage(int damage) {
+        this.Damage = damage;
     }
+    @Override
+    public void attack() {
+
+    }
+
 }

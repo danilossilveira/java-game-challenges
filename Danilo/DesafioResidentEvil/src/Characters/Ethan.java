@@ -4,10 +4,9 @@ public class Ethan extends Character{
     private String arm;
     private int damage;
 
-    public Ethan(String name,String arm, int damage,  int life) {
-        super(name, life);
-        this.arm = arm;
-        this.damage = damage;
+    public Ethan() {
+        super("Ethan", 200, 40);
+        setArm("Sniper");
     }
 
     public String getArm() {
@@ -26,7 +25,9 @@ public class Ethan extends Character{
         this.damage = damage;
 
     }
-    public void attack (){
+    @Override
+    public void attack() {
 
     }
+
 }

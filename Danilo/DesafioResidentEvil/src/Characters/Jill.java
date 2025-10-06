@@ -4,10 +4,10 @@ public class Jill extends Character{
     private String arm;
     private int damage;
 
-    public Jill(String name,String arm, int damage,  int life) {
-        super(name, life);
-        this.arm = arm;
-        this.damage = damage;
+    public Jill() {
+        super("Jill", 230, 30);
+        setArm("Sub-metralhadora");
+
     }
 
     public String getArm() {
@@ -25,7 +25,9 @@ public class Jill extends Character{
     public void setDamage(int damage) {
         this.damage = damage;
     }
-    public void attack (){
+    @Override
+    public void attack() {
 
     }
+
 }

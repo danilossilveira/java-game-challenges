@@ -2,13 +2,14 @@ package Characters;
 
 public class Regenerator extends Character{
     private String tipe;
-    private int attackDamage;
+    private int Damage;
 
-    public Regenerator(String name, int life, String tipe, int attackDamage) {
-        super(name, life);
-        this.tipe = tipe;
-        this.attackDamage = attackDamage;
+    public Regenerator() {
+        super("Iron Mainden", 350);
+        setTipe("Regenerator");
+        setDamage(15);
     }
+
 
     public String getTipe() {
         return tipe;
@@ -18,11 +19,16 @@ public class Regenerator extends Character{
         this.tipe = tipe;
     }
 
-    public int getAttackDamage() {
-        return attackDamage;
+    public int getDamage() {
+        return Damage;
     }
 
-    public void setAttackDamage(int attackDamage) {
-        this.attackDamage = attackDamage;
+    public void setDamage(int damage) {
+        this.Damage = damage;
     }
+    @Override
+    public void attack() {
+
+    }
+
 }

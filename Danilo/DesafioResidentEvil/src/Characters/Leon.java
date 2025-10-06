@@ -4,10 +4,11 @@ public class Leon extends Character{
     private String arm;
     private int damage;
 
-    public Leon(String name,String arm, int damage,  int life) {
-        super(name, life);
-        this.arm = arm;
-        this.damage = damage;
+    public Leon() {
+        super("Leon", 240, 30);
+        setArm("Handgan");
+
+
     }
 
     public String getArm() {
@@ -25,8 +26,13 @@ public class Leon extends Character{
     public void setDamage(int damage) {
         this.damage = damage;
     }
-    public void attack (){
-        int chosenEnemy;
+    @Override
+    public void attack() {
 
     }
+    @Override
+    public void ficha() {
+
+    }
+
 }

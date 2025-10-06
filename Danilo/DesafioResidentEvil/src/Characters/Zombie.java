@@ -2,12 +2,13 @@ package Characters;
 
 public class Zombie extends Character{
     private String tipe;
-    private int attackDamage;
+    private int Damage;
 
-    public Zombie(String name, int life, String tipe, int attackDamage) {
-        super(name, life);
-        this.tipe = tipe;
-        this.attackDamage = attackDamage;
+    public Zombie() {
+        super("Zumbi", 220);
+        setTipe("Corredor");
+        setDamage(10);
+
     }
 
     public String getTipe() {
@@ -18,11 +19,16 @@ public class Zombie extends Character{
         this.tipe = tipe;
     }
 
-    public int getAttackDamage() {
-        return attackDamage;
+    public int getDamage() {
+        return Damage;
     }
 
-    public void setAttackDamage(int attackDamage) {
-        this.attackDamage = attackDamage;
+    public void setDamage(int damage){
+        this.Damage = damage;
     }
+    @Override
+    public void attack() {
+
+    }
+
 }
